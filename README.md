@@ -1,7 +1,13 @@
 # Deploy
 
+github actions
 ```
-- npm run deploy
+develop -> master
+```
+
+cli
+```
+npm run deploy
 ```
 
 # Site
