@@ -4,7 +4,7 @@ import {
   PaymentWidgetInstance,
 } from "@tosspayments/payment-widget-sdk";
 import { PaymentButton } from "./PaymentButton";
-import { DiscountCheckbox } from "./DiscountCheckbox";
+import { PriceChangeCheckbox } from "./PriceChangeCheckbox";
 
 // clientKey는 위젯을 렌더링하는 상점을 식별
 const clientKey = "test_ck_D5GePWvyJnrK0W0k6q8gLzN97Eoq";
@@ -59,9 +59,9 @@ export const PaymentPage = () => {
       <h1>결제</h1>
       {/* 위젯 UI 가 되는 div */}
       <div id="payment-widget" />
-      <DiscountCheckbox price={price} onPrice={setPrice}>
+      <PriceChangeCheckbox price={price} onPrice={setPrice}>
         5,000원 할인 쿠폰 적용
-      </DiscountCheckbox>
+      </PriceChangeCheckbox>
       <PaymentButton paymentWidgetRef={paymentWidgetRef}>
         결제하기
       </PaymentButton>
