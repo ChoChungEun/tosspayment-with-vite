@@ -7,7 +7,7 @@ import { FailPage } from "./pages/Fail";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/tosspayment-with-vite",
     element: <PaymentPage />,
   },
   {
